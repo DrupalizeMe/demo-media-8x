@@ -16,9 +16,18 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "drupal/colorbox_field_formatter": "^2.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8"
+        "drupal/core-recommended": "^8.8",
+        "drupal/dropzonejs": "^2.1",
+        "drupal/entity_usage": "^2.0@beta",
+        "drupal/media_bulk_upload": "^1.0@alpha",
+        "enyo/dropzone": "^5.7",
+        "oomphinc/composer-installers-extender": "^1.1"
+    },
+    "require-dev": {
+        "drush/drush": "^10.2"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -34,12 +43,14 @@
                 "web-root": "web/"
             }
         },
+        "installer-types": ["library"],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "enyo/dropzone"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
