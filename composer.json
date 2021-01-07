@@ -23,7 +23,10 @@
         "drupal/dropzonejs": "^2.1",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/media_bulk_upload": "^1.0@alpha",
+        "drupal/media_entity_twitter": "^2.4",
+        "drupal/oembed_providers": "^1.1",
         "enyo/dropzone": "^5.7",
+        "eojthebrave/songwhip-php": "dev-main",
         "oomphinc/composer-installers-extender": "^1.1"
     },
     "require-dev": {

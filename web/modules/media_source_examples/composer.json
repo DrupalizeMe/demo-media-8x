@@ -1,0 +1,15 @@
+{
+    "name": "eojthebrave/media_source_examples",
+    "description": "Examples of defining custom Media source plugins for Drupal 8 and 9.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Joe Shindelar",
+            "email": "eojthebrave@gmail.com"
+        }
+    ],
+    "require": {
+        "eojthebrave/songwhip-php": "dev-main"
+    }
+}

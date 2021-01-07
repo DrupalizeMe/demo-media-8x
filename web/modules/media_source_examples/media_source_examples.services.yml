@@ -1,0 +1,18 @@
+services:
+  media_source_examples.songwhip_fetcher:
+    class: \Drupal\media_source_examples\SongwhipFetcher
+    arguments:
+      - '@cache.songwhip'
+      - '@media_source_examples.songwhip_api_client'
+
+  media_source_examples.songwhip_api_client:
+    class: \Songwhip\Client
+    arguments: ['@http_client']
+
+  cache.songwhip:
+    class: Drupal\Core\Cache\CacheBackendInterface
+    tags:
+      - { name: cache.bin }
+    factory: cache_factory:get
+    arguments:
+      - songwhip
