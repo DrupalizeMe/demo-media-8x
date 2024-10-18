@@ -37,7 +37,7 @@ class SongwhipFetcher {
   }
 
   /**
-   * Retrieve sonwgwhip response for a streaming service URL.
+   * Retrieve songwhip response for a streaming service URL.
    *
    * @param string $url
    *   Streaming service URL to look up via Songwhip.
