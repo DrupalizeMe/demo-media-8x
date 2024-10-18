@@ -244,7 +244,7 @@ class Songwhip extends MediaSourceBase {
       return NULL;
     }
 
-    // Compute the local thumbnail URI, regardless of whether or not it exists.
+    // Compute the local thumbnail URI, regardless of whether it exists.
     $directory = $this->configuration['thumbnails_directory'];
     $local_thumbnail_uri = "$directory/" . Crypt::hashBase64($remote_thumbnail_url) . '.' . pathinfo($remote_thumbnail_url, PATHINFO_EXTENSION);
     // This assumes they are all JPEG. Is that safe?
